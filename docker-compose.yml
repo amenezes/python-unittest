@@ -1,0 +1,14 @@
+version: '2'
+services:
+  python-unittest:
+    build:
+      context: .
+      dockerfile: Dockerfile
+#    volumes:
+#      - $PWD/textos:/app
+#    command:
+#      - python
+#      - -m
+#      - pytest
+#      - -v
+#      - tests/ocr_test.py
