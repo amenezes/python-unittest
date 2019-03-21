@@ -11,3 +11,4 @@ alembic==1.0.7
 alembic-verify==0.1.4
 python-dotenv==0.10.1
 loguru==0.2.5
+aiohttp==3.5.4
