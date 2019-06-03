@@ -7,10 +7,11 @@ before_script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 script:
-  - docker image build -t amenezes/$IMAGE_NAME:$IMAGE_TAG .
-  - docker image push amenezes/$IMAGE_NAME:$IMAGE_TAG
+  - docker image build -t amenezes/$IMAGE_NAME:textos .
+  - docker image push amenezes/$IMAGE_NAME:textos
+  - docker image build -t amenezes/$IMAGE_NAME:temas .
+  - docker image push amenezes/$IMAGE_NAME:temas
 
 env:
   global:
-   - IMAGE_TAG=latest
    - IMAGE_NAME=python-unittest

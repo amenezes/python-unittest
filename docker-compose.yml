@@ -1,9 +1,13 @@
 version: '2'
 services:
-  python-unittest:
+  python-unittest-textos:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.textos
+  python-unittest-temas:
+    build:
+      context: .
+      dockerfile: Dockerfile.temas
 #    volumes:
 #      - $PWD/textos:/app
 #    command:
