@@ -7,9 +7,9 @@ before_script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 script:
-  - docker image build -t amenezes/$IMAGE_NAME:textos -f Dockerfile.textos .
+  - docker image build -t amenezes/$IMAGE_NAME:textos -f textos/Dockerfile .
   - docker image push amenezes/$IMAGE_NAME:textos
-  - docker image build -t amenezes/$IMAGE_NAME:temas -f Dockerfile.temas .
+  - docker image build -t amenezes/$IMAGE_NAME:temas -f temas/Dockerfile .
   - docker image push amenezes/$IMAGE_NAME:temas
 
 env:

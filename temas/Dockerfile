@@ -3,7 +3,7 @@ FROM python:3.6.8-alpine
 WORKDIR /app
 
 COPY requirements.txt .
-COPY requirements-temas.txt .
+COPY temas/requirements-temas.txt .
 
 RUN apk add --no-cache make \
                        openblas \

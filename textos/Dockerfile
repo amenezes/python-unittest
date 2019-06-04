@@ -15,7 +15,7 @@ RUN apk add --no-cache tesseract-ocr \
     rm -rf /var/cache/apk/*
 
 COPY requirements.txt .
-COPY requirements-textos.txt .
+COPY textos/requirements-textos.txt .
 
 RUN pip install -r requirements.txt
 RUN pip install -r requirements-textos.txt
