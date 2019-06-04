@@ -15,4 +15,3 @@ discovery-client==0.2.2
 python-consul==1.1.0
 alembic==1.0.10
 alembic-verify==0.1.4
-alembic
