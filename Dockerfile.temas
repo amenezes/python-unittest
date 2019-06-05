@@ -7,7 +7,7 @@ COPY requirements-temas.txt .
 
 RUN apk add --no-cache make \
                        build-base \
-                       openblas-dev \
+                       openblas \
                        pkgconf \
                        lapack-dev \
                        libstdc++ \
