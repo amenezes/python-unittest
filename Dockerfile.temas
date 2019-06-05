@@ -6,7 +6,9 @@ COPY requirements.txt .
 COPY requirements-temas.txt .
 
 RUN apk add --no-cache make \
-                       openblas \
+                       build-base \
+                       openblas-dev \
+                       pkgconf \
                        lapack-dev \
                        libstdc++ \
                        libgomp \
